@@ -46,3 +46,66 @@ section-m1 {
 body {
   width: 100%;
 }
+
+/* HEADER START*/
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background: #e3e6f3;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* target the list items itself to remove the ul decoration */
+/* better to use padding to pace them */
+#navbar li {
+  position: relative;
+  list-style-type: none;
+  padding: 0 20px;
+}
+
+/* target the a tag itself to remove the underlines */
+#navbar li a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  transition: 0.3s ease;
+}
+
+/* the text is inside the a tag so must narrow down on it to do something to it */
+/* a:hover will change the color for any link hovered on */
+/* a.active will maintain the color for any link with the class active */
+/* here we put the .active on the home page but when we change pages, we need the active there as well. but for now, the home page */
+#navbar li a:hover,
+#navbar li a.active {
+  color: #088178;
+  /* go back to the real tag to control how quickly the color changes with the transition property */
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+  content: '';
+  width: 30%;
+  height: 2px;
+  background: #088178;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+/* Home Page */
+
+/* Shop Page */
+
+/* Single Product */
+
+/* Blog Page */
+
+/* About Page */
