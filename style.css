@@ -80,6 +80,13 @@ body {
   justify-content: center;
 }
 
+/* responsiveness. remove the hamburger & 2nd shopping cart on big screens */
+#mobile,
+#closeNav {
+  display: none;
+  /* align-items: center; */
+}
+
 /* target the list items itself to remove the ul decoration */
 /* better to use padding to pace them */
 #navbar li {
@@ -553,3 +560,130 @@ footer .copyright {
 /* Blog Page */
 
 /* About Page */
+
+/* Start Media Query */
+
+@media (max-width: 799px) {
+  .section-p1 {
+    padding: 40px 40px;
+  }
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    /* we designed the navbar on small screens exactly the way we want it to */
+    /* except for this small detail 'right: - 300px' */
+    /* this is done to hide it */
+    /* with the help of js, we can change this to 0px to display it when needed */
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: #e3e6f3;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 80px 0 0 10px;
+    /* this navbar will be opening and closing */
+    /* we don't want it to do that rigidly */
+    transition: 0.3s;
+  }
+
+  /* so anytime there's a click on the #bar, an 'active' class is added to the #navbar*/
+
+  /* we can zero in on that by calling it specifically using this chain method */
+
+  /* don't forget everything is done, we just need to change the right position to 0px to display it */
+  #navbar.active {
+    right: 0px;
+  }
+
+  /* we don't want the shopping bag to show in the navbar on small screens */
+  #sh-bag {
+    display: none;
+  }
+
+  #navbar li {
+    margin-bottom: 25px;
+  }
+
+  /* learnt the hard way. don't just do display block */
+  /* they are two icons, they'll flow col when you just do display block */
+  #mobile {
+    display: flex;
+    align-items: center;
+  }
+
+  #mobile i {
+    color: #1a1a1a;
+    font-size: 24px;
+    padding-left: 20px;
+  }
+
+  #closeNav {
+    /* you can now display the close bar on sm screens */
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #222;
+    font-size: 24px;
+  }
+
+  #hero {
+    height: 70vh;
+    padding: 0 80px;
+    background-position: top 30% right 30%;
+  }
+
+  #feature {
+    justify-content: center;
+  }
+
+  #feature .fe-box {
+    margin: 15px 15px;
+  }
+
+  #product1 .pro-container {
+    justify-content: center;
+  }
+
+  #product1 .pro {
+    margin: 15px;
+  }
+
+  #banner {
+    height: 20vh;
+  }
+
+  #sm-banner .banner-box {
+    min-width: 100%;
+    height: 30vh;
+  }
+
+  #banner3 {
+    padding: 0 40px;
+  }
+
+  #banner3 .banner-box {
+    width: 28%;
+  }
+
+  #newsletter {
+    justify-content: center;
+  }
+
+  .newstext {
+    text-align: center;
+  }
+
+  #newsletter .form {
+    width: 70%;
+  }
+}
+
+@media (max-width: 477px) {
+  #header {
+    padding: 20px 80px;
+  }
+}
