@@ -851,6 +851,10 @@ footer .copyright {
   #newsletter .form {
     width: 70%;
   }
+
+  #blog {
+    padding: 100px 100px 0 100px;
+  }
 }
 
 @media (max-width: 477px) {
@@ -929,5 +933,27 @@ footer .copyright {
   #prodetails .single-pro-details {
     width: 100%;
     /* text-align: center; */
+  }
+
+  /* blog page */
+
+  #blog {
+    padding: 100px 20px 0 20px;
+  }
+
+  #blog .blog-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #blog .blog-box .blog-img {
+    margin-bottom: 30px;
+  }
+
+  #blog .blog-box .blog-img,
+  #blog .blog-box .blog-details {
+    width: 100%;
+    margin-right: 0px;
   }
 }
