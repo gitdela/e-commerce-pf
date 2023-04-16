@@ -107,7 +107,7 @@
     </section>
 
     <section id="product1" class="section-p1">
-      <h2>Featured Products</h2>
+      <h2>You May Also Like</h2>
       <p>Summer Collection New Modern Designs</p>
       <div class="pro-container">
         <div class="pro">
@@ -249,7 +249,28 @@
       </div>
     </footer>
 
-    <script></script>
+    <script>
+      const mainImg = document.querySelector('#MainImg');
+      const smallImgs = document.querySelectorAll('.small-img');
+
+      //   learnt the hard way. onclick not OnClick or onClick
+
+      console.log(smallImgs);
+
+      smallImgs[0].onclick = function () {
+        mainImg.src = smallImgs[0].src;
+      };
+      smallImgs[1].onclick = function () {
+        mainImg.src = smallImgs[1].src;
+      };
+      smallImgs[2].onclick = function () {
+        mainImg.src = smallImgs[2].src;
+      };
+      smallImgs[3].onclick = function () {
+        mainImg.src = smallImgs[3].src;
+      };
+      //   console.log(smallImg);
+    </script>
     <script src="script.js"></script>
   </body>
 </html>

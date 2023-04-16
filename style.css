@@ -841,4 +841,21 @@ footer .copyright {
     width: 100%;
     padding: 20px 0;
   }
+
+  /* single product */
+
+  #prodetails {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+  }
+
+  #prodetails .single-pro-image {
+    width: 100%;
+  }
+
+  #prodetails .single-pro-details {
+    width: 100%;
+    /* text-align: center; */
+  }
 }
