@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="header">
+      <a href="#"><img src="img/logo.png" alt="" class="logo" /></a>
+
+      <div>
+        <ul id="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a class="active" href="contact.html">Contact</a></li>
+          <li id="sh-bag">
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          </li>
+          <!-- after opening the navbar on small screens, we need to see the close bar -->
+
+          <!-- don't forget the navbar looks like how you styled it on small screens -->
+
+          <!-- picture the #close bar inside that 100vh fixed position design -->
+          <a href="#" id="closeNav"><i class="far fa-times"></i></a>
+        </ul>
+      </div>
+
+      <div id="mobile">
+        <!-- added a cart & here to be displayed on smaller screens -->
+        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="#" id="openNav"><i class="fas fa-outdent"></i></a>
+      </div>
+    </nav>
+
+    <section id="page-header" class="about-header">
+      <h2>#let's_talk</h2>
+      <p>Lorem ipsum dolor sit amet consectetur.</p>
+    </section>
+
+    <section id="contact-details" class="section-p1">
+      <div class="details">
+        <span>GET IN TOUCH</span>
+        <h2>Visit one of our agency locations or contact us today</h2>
+        <h3>Head Office</h3>
+        <div class>
+          <li>
+            <i class="far fa-map"></i>
+            <p>56 Glassford Street Glasglow G1 1UL New York</p>
+          </li>
+          <li>
+            <i class="far fa-envelope"></i>
+            <p>scriptingdela@gmail.com</p>
+          </li>
+          <li>
+            <i class="fa fa-phone-alt"></i>
+            <p>024 920 3351</p>
+          </li>
+          <li>
+            <i class="far fa-clock"></i>
+            <p>Monday to Sunday: 9.00am to 16.00pm</p>
+          </li>
+        </div>
+      </div>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1985.2744826301825!2d-0.24125896394554927!3d5.633387232865101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf99b034782965%3A0xb32231f24ba2a0f7!2s31%20Oxen%20LP%2C%20Achimota!5e0!3m2!1sen!2sgh!4v1681835320777!5m2!1sen!2sgh"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <section id="form-details">
+      <form action="">
+        <span>LEAVE A MESSAGE</span>
+        <h2>We love to hear from you</h2>
+        <input type="text" placeholder="Your Name" />
+        <input type="text" placeholder="E-mail" />
+        <input type="text" placeholder="Subject" />
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+        ></textarea>
+        <button class="normal">Submit</button>
+      </form>
+
+      <div class="people">
+        <div>
+          <img src="img/people/1.png" alt="" />
+          <p>
+            <span>John Doe </span>Senior Marketing Manager <br />
+            Phone: +233 24 656 7117 <br />
+            Email: anonjdoe@gmail.com
+          </p>
+        </div>
+        <div>
+          <img src="img/people/2.png" alt="" />
+          <p>
+            <span>Jane Dominic </span>System Analyst <br />
+            Phone: +233 24 656 7117 <br />
+            Email: domj453o@gmail.com
+          </p>
+        </div>
+        <div>
+          <img src="img/people/3.png" alt="" />
+          <p>
+            <span>Jack Williams </span>Deputy Financial Director <br />
+            Phone: +233 24 656 7117 <br />
+            Email: willyj1896@gmail.com
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+      <div class="newstext">
+        <h4>Sign Up For Newsletters</h4>
+        <p>
+          Get Email updates about our latest shop and
+          <span>special offers</span>
+        </p>
+      </div>
+      <div class="form">
+        <input type="text" placeholder="Your email address" />
+        <button class="normal">Sign Up</button>
+      </div>
+    </section>
+
+    <footer class="section-p1">
+      <div class="col">
+        <img class="logo" src="img/logo.png" alt="" />
+        <h4>Contact</h4>
+        <p>
+          <strong>Address: </strong> 31 Oxen LP, Mile 7, Achimota, Accra - Ghana
+        </p>
+        <p><strong>Phone: </strong>+233 24 920 3351</p>
+        <p><strong>Hours: </strong>10:00 - 18:00, Mon - Sat</p>
+        <div class="follow">
+          <h4>Follow us</h4>
+          <div class="icons">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-pinterest-p"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <h4>About</h4>
+        <a href="#">About Us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact Us</a>
+      </div>
+
+      <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+      </div>
+
+      <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="row">
+          <img src="img/pay/app.jpg" alt="" />
+          <img src="img/pay/play.jpg" alt="" />
+        </div>
+        <p>Secured Payment Gateways</p>
+        <img src="img/pay/pay.png" alt="" />
+      </div>
+
+      <div class="copyright">
+        <p>
+          Developed in 2023 by Front End Developer: Ken Nartey - HTML CSS
+          JavaScript Ecommerce Project
+        </p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
